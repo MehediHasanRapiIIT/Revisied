@@ -44,8 +44,11 @@ public class BinarySearchMergeSort {
     public static int binarySearch(int[] arr, int target) {
         int low = 0;
         int high = arr.length - 1;
+        int i = 1;
 
         while (low <= high) {
+            System.out.println("iteration: "+i);
+            i++;
             int mid = low + (high - low) / 2;
 
             if (arr[mid] == target) {
